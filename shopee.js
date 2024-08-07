@@ -33,6 +33,8 @@ const url = 'https://shopee.ph/buyer/login?next=' + encodeURIComponent(process.e
     await page.waitForSelector('.dWxniD', { state: 'visible' });
     await page.click('.dWxniD');
 
+    console.log('Please check for security verification email...');
+    
     //// At this point, we need to confirm the email link to continue ////////
 
     // ------------------------------------------------------
